@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&display=swap');
 
+:root {
+    --primary-color: #37384e;
+    --neutral-color: #ffffff;
+    --secondary-color: #E8751A;
+}
+
 .container {
     width: 768px;
     height: calc(100vh - 240px);
-    background-color: #ffffff;
+    background-color: var(--neutral-color);
     border-radius: 8px;
     padding: 24px;
     font-family: "Inter", sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .heading {
@@ -23,4 +33,33 @@
 
 .search-box {
     padding: 8px;
+}
+
+.icon-container {
+    height: 48px;
+    width: 48px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 0;
+    transition: transform 0.1s ease-in-out;
+}
+
+.icon-container:hover {
+    transform: scale(1.2);
+}
+
+.plus-icon {
+    color: var(--neutral-color);
+    height: 24px;
+    width: 24px;
+}
+
+.content {
 }
