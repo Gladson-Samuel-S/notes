@@ -9,7 +9,7 @@
 
 .container {
     width: 768px;
-    height: calc(100vh - 240px);
+    height: calc(100vh - 164px);
     background-color: var(--neutral-color);
     border-radius: 8px;
     padding: 24px;
@@ -62,4 +62,12 @@
 }
 
 .content {
+    overflow-y: auto;
+    padding: 12px;
+}
+
+.cards-container {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: auto auto auto;
 }
