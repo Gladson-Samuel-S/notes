@@ -1,0 +1,24 @@
+.back-link-pill {
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: var(--grey-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    width: fit-content;
+    text-decoration: none;
+}
+
+.back-link {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+.back-arrow {
+    color: black;
+}

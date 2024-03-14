@@ -5,6 +5,9 @@
     --primary-color: #37384e;
     --neutral-color: #ffffff;
     --secondary-color: #E8751A;
+    --grey-color: #F5F7F8;
+    --dimmed-text: #4b5563;
+    --dark-grey: #76ABAE;
 }
 
 .container {
@@ -70,4 +73,20 @@
     display: grid;
     gap: 24px;
     grid-template-columns: auto auto auto;
+}
+
+
+.loader {
+    animation: spin 1s linear infinite;
+}
+
+/* Spin animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

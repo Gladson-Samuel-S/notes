@@ -1,32 +1,20 @@
-import { useEffect, useState } from "react";
 import { BASE_API_URL } from "../common/constants";
+import { getResponse } from "../common/utils";
 import Card from "../components/Card";
+import useFetch from "../hooks/useFetch";
 
 const Index = () => {
-  const [notes, setNotes] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
+  const { data: notes = null, loading, error, updateData, updateError } = useFetch()
 
-  const fetchNotes = async () => {
-    try {
-      setLoading(true)
-      await delay(4000);
-      const response = await fetch(BASE_API_URL)
-      const notes = await response.json()
-      setLoading(false)
-      setNotes(notes)
-      setError(null)
-    } catch (error) {
-      setLoading(false)
-      setNotes([])
-      setError(error)
+  const handleNoteDelete = async (id) => {
+    updateData(notes.map((note) => note.id === id ? { ...note, isDeletePending: true } : note))
+    const response = await getResponse(`${BASE_API_URL}/${id}`, 'DELETE');
+    if (response.ok) {
+      updateData(notes.filter((note) => note.id !== id))
+    } else {
+      updateError('Not able to delete note please try again later 😞');
     }
   }
-
-  useEffect(() => {
-    fetchNotes();
-  }, [])
 
   return (
     <div className="Index-container">
@@ -34,18 +22,23 @@ const Index = () => {
       {error && <p>failed to fetch please try again 😞</p>}
 
       <div className="cards-container">
-        {!loading && !error && notes.map(({
+        {!loading && !error && notes?.map(({
+          id,
           highlightColor,
           category,
           description,
-          title
-        }, index) => (
+          title,
+          isDeletePending
+        }) => (
           <Card
-            key={index}
+            id={id}
+            key={id}
             highlightColor={highlightColor}
             category={category}
             description={description}
             title={title}
+            onDelete={handleNoteDelete}
+            isDeletePending={isDeletePending}
           />
         ))}
       </div>

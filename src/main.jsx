@@ -8,6 +8,7 @@ import {
 import './index.css'
 import Index from './pages/Index.jsx';
 import CreateNote from './pages/CreateNote.jsx';
+import Note from './pages/Note.jsx';
 
 const router = createBrowserRouter([
   {
@@ -16,11 +17,14 @@ const router = createBrowserRouter([
     children: [{
       index: true,
       element: <Index />
-    },{
+    }, {
       path: '/create',
       element: <CreateNote />
+    }, {
+      path: '/note/:id',
+      element: <Note />
     }
-  ]
+    ]
   },
 ]);
 

@@ -1,5 +1,6 @@
 .card {
     border-radius: 8px;
+    background-color: var(--grey-color);
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
@@ -15,7 +16,6 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    background-color: #F5F7F8;
 }
 
 .card-header {
@@ -27,18 +27,20 @@
 .card-category {
     font-size: 16px;
     line-height: 20px;
-    color: #4b5563;
+    color: var(--dimmed-text);
     text-transform: capitalize;
 }
 
 .card-title {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 32px;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
     font-family: "Oswald", sans-serif;
+    text-decoration: none;
+    color: black;
 }
 
 .card-description {
@@ -48,7 +50,7 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    color: #4b5563;
+    color: var(--dimmed-text);
 }
 
 .delete-button {

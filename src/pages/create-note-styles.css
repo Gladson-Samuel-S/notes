@@ -1,0 +1,60 @@
+.option-highlight-color {
+    height: 32px;
+    width: 32px;
+    border-radius: 4px;
+}
+
+form {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: calc(100% - 240px);
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+input {
+    padding: 8px;
+}
+
+select {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.select-color {
+    display: flex;
+    gap: 16px;
+}
+
+.select-color label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-color input {
+    opacity: 0.5;
+}
+
+.submit-cta {
+    padding: 8px 24px;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: capitalize;
+    width: fit-content;
+}

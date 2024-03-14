@@ -1,74 +1,74 @@
 {
-    "notes": [
-        {
-            "id": 1,
-            "highlightColor": "#FFBE98",
-            "category": "lifestyle",
-            "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-            "description": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
-        },
-        {
-            "id": 2,
-            "highlightColor": "#ED7D31",
-            "category": "entertainment",
-            "title": "qui est esse",
-            "description": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
-        },
-        {
-            "id": 3,
-            "highlightColor": "#F3CCF3",
-            "category": "lifestyle",
-            "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
-            "description": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
-        },
-        {
-            "id": 4,
-            "highlightColor": "#ED7D31",
-            "category": "fun",
-            "title": "eum et est occaecati",
-            "description": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
-        },
-        {
-            "id": 5,
-            "highlightColor": "#F3CCF3",
-            "category": "personal",
-            "title": "nesciunt quas odio",
-            "description": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
-        },
-        {
-            "id": 6,
-            "highlightColor": "#FFBE98",
-            "category": "work",
-            "title": "dolorem eum magni eos aperiam quia",
-            "description": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
-        },
-        {
-            "id": 7,
-            "highlightColor": "#ED7D31",
-            "category": "personal",
-            "title": "magnam facilis autem",
-            "description": "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas"
-        },
-        {
-            "id": 8,
-            "highlightColor": "#F3CCF3",
-            "category": "lifestyle",
-            "title": "dolorem dolore est ipsam",
-            "description": "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae"
-        },
-        {
-            "id": 9,
-            "highlightColor": "#FFBE98",
-            "category": "work",
-            "title": "nesciunt iure omnis dolorem tempora et accusantium",
-            "description": "consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas"
-        },
-        {
-            "id": 10,
-            "highlightColor": "#ED7D31",
-            "category": "work",
-            "title": "optio molestias id quia eum",
-            "description": "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error"
-        }
-    ]
+  "notes": [
+    {
+      "id": "4441",
+      "highlightColor": "#F3CCF3",
+      "category": "lifestyle",
+      "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+      "description": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+    },
+    {
+      "id": "5",
+      "highlightColor": "#F3CCF3",
+      "category": "personal",
+      "title": "nesciunt quas odio",
+      "description": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
+    },
+    {
+      "id": "6",
+      "highlightColor": "#FFBE98",
+      "category": "work",
+      "title": "dolorem eum magni eos aperiam quia",
+      "description": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
+    },
+    {
+      "id": "7",
+      "highlightColor": "#ED7D31",
+      "category": "personal",
+      "title": "magnam facilis autem",
+      "description": "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas"
+    },
+    {
+      "id": "8",
+      "highlightColor": "#F3CCF3",
+      "category": "lifestyle",
+      "title": "dolorem dolore est ipsam",
+      "description": "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae"
+    },
+    {
+      "id": "bad3cbb3-5223-4029-98d3-3c74013a2d5d",
+      "title": "Buy groceries",
+      "description": "Apple, orange, grapes, chips, chicken etc..",
+      "highlightColor": "#F3CCF3",
+      "category": "Personal"
+    },
+    {
+      "id": "46353030-c224-4db9-94c9-8af7199e8ef3",
+      "title": "Learn next js",
+      "description": "Router, SSR, SSG etc..",
+      "highlightColor": "#ED7D31",
+      "category": "Work"
+    },
+    {
+      "id": "de5bb110-de81-4994-bfa8-b5185f7aa5b9",
+      "title": "Thinking of a note",
+      "description": "testing testing",
+      "highlightColor": "#FFBE98",
+      "category": "Entertainment"
+    },
+    {
+      "id": "0756f297-771a-49f6-a333-75ad8ee37082",
+      "title": "Basic note",
+      "description": "lorem ipsum asldkfjasldfkjla asdflkj asdlfkjsdlfj",
+      "highlightColor": "#FFBE98",
+      "category": "Entertainment"
+    },
+    {
+      "id": "386d08af-c32c-4084-87a5-ac2fd8d85b40",
+      "title": "Mani's note",
+      "description": "Note body text asdlkj asdflkj 123l asdlfkj ",
+      "highlightColor": "#FFBE98",
+      "category": "Work"
+    }
+  ]
 }
