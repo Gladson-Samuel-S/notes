@@ -17,7 +17,7 @@ const Note = () => {
 
     return (
         <div className="note">
-            <HomeButton />
+            {!loading && <HomeButton />}
 
             {loading && <p>loading...</p>}
             {error && <p>failed to fetch please try again 😞</p>}
