@@ -1,0 +1,31 @@
+.note {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.header {
+    margin-top: 24px;
+    background-color: var(--highlight);
+    padding: 8px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.note-title {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.category {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.note-body {
+    font-size: 14px;
+}

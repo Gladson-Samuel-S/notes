@@ -69,6 +69,13 @@
       "description": "Note body text asdlkj asdflkj 123l asdlfkj ",
       "highlightColor": "#FFBE98",
       "category": "Work"
+    },
+    {
+      "id": "9d287fc8-7ba0-41fa-8f29-405b022e0732",
+      "title": "Copilot note",
+      "description": "# Dummy Note  ## To-Do List - Buy groceries - Walk the dog - Pay bills  ## Random Thoughts - Why do we park in driveways and drive on parkways? - If a tree falls in a forest and no one is around to hear it, does it make a sound?  Remember, this is just a playful note. Feel free to add your own content or customize it as needed! 😊",
+      "highlightColor": "#ED7D31",
+      "category": "Personal"
     }
   ]
 }

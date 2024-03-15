@@ -9,11 +9,12 @@ import './index.css'
 import Index from './pages/Index.jsx';
 import CreateNote from './pages/CreateNote.jsx';
 import Note from './pages/Note.jsx';
+import { HeadingContextProvider } from './context/HeadingContext.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <HeadingContextProvider><App /></HeadingContextProvider>,
     children: [{
       index: true,
       element: <Index />

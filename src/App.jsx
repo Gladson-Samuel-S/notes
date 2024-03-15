@@ -1,16 +1,11 @@
 import './App.css'
 import Header from './components/Header'
 import CreateNoteLink from './components/CreateNoteLink'
-import { Outlet, useLocation } from 'react-router-dom'
-
-const HEADING = {
-  '/': 'Notes',
-  '/create': 'Create Note'
-}
+import { Outlet } from 'react-router-dom'
+import { useHeading } from './context/HeadingContext'
 
 function App() {
-  const { pathname } = useLocation();
-  const heading = HEADING[pathname]
+  const { heading } = useHeading();
 
   return (
     <main className='container'>

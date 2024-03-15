@@ -1,10 +1,13 @@
+import { useEffect } from "react";
 import { BASE_API_URL } from "../common/constants";
 import { getResponse } from "../common/utils";
 import Card from "../components/Card";
+import { useHeading } from "../context/HeadingContext";
 import useFetch from "../hooks/useFetch";
 
 const Index = () => {
   const { data: notes = null, loading, error, updateData, updateError } = useFetch()
+  const { updateHeading } = useHeading()
 
   const handleNoteDelete = async (id) => {
     updateData(notes.map((note) => note.id === id ? { ...note, isDeletePending: true } : note))
@@ -15,6 +18,10 @@ const Index = () => {
       updateError('Not able to delete note please try again later 😞');
     }
   }
+
+  useEffect(() => {
+    updateHeading('Notes')
+  }, [])
 
   return (
     <div className="Index-container">

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { delay } from "../common/utils";
 import { BASE_API_URL } from "../common/constants";
 
-const useFetch = () => {
+const useFetch = (url = BASE_API_URL) => {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
@@ -11,7 +11,7 @@ const useFetch = () => {
         try {
             setLoading(true)
             await delay(4000);
-            const response = await fetch(BASE_API_URL)
+            const response = await fetch(url)
             const data = await response.json()
             setLoading(false)
             setData(data)
