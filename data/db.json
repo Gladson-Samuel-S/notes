@@ -1,25 +1,11 @@
 {
   "notes": [
     {
-      "id": "4441",
-      "highlightColor": "#F3CCF3",
-      "category": "lifestyle",
-      "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
-      "description": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
-    },
-    {
       "id": "5",
       "highlightColor": "#F3CCF3",
       "category": "personal",
       "title": "nesciunt quas odio",
       "description": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
-    },
-    {
-      "id": "6",
-      "highlightColor": "#FFBE98",
-      "category": "work",
-      "title": "dolorem eum magni eos aperiam quia",
-      "description": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
     },
     {
       "id": "7",
@@ -76,6 +62,20 @@
       "description": "# Dummy Note  ## To-Do List - Buy groceries - Walk the dog - Pay bills  ## Random Thoughts - Why do we park in driveways and drive on parkways? - If a tree falls in a forest and no one is around to hear it, does it make a sound?  Remember, this is just a playful note. Feel free to add your own content or customize it as needed! 😊",
       "highlightColor": "#ED7D31",
       "category": "Personal"
+    },
+    {
+      "id": "51d1e6b6-f7d6-4b0d-83dd-e194d65264c5",
+      "title": "My first note",
+      "description": "Creating my first note",
+      "highlightColor": "#FFBE98",
+      "category": "Entertainment"
+    },
+    {
+      "id": "12b1a73d-18e7-4198-885c-aae38eeee967",
+      "title": "Hello my friend",
+      "description": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"",
+      "highlightColor": "#F3CCF3",
+      "category": "Work"
     }
   ]
 }

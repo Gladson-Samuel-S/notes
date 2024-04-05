@@ -10,11 +10,19 @@ import Index from './pages/Index.jsx';
 import CreateNote from './pages/CreateNote.jsx';
 import Note from './pages/Note.jsx';
 import { HeadingContextProvider } from './context/HeadingContext.jsx';
+import { apiSlice } from './features/api/apiSlice.js';
+import { ApiProvider } from "@reduxjs/toolkit/query/react";
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HeadingContextProvider><App /></HeadingContextProvider>,
+    element:
+      <ApiProvider api={apiSlice}>
+        <HeadingContextProvider>
+          <App />
+        </HeadingContextProvider>
+      </ApiProvider>,
     children: [{
       index: true,
       element: <Index />

@@ -1,17 +1,16 @@
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import './create-note-styles.css'
+import './styles/create-note-styles.css'
 import HomeButton from "../components/HomeButton";
-import { getResponse } from '../common/utils';
 import { useNavigate } from 'react-router-dom';
-import { BASE_API_URL } from '../common/constants';
 import { AiOutlineLoading } from 'react-icons/ai';
 import { useHeading } from '../context/HeadingContext';
+import { useAddNoteMutation } from '../features/api/apiSlice';
 
 const CreateNote = () => {
-    const [isCreating, setIsCreating] = useState(false)
     const navigate = useNavigate()
     const { updateHeading } = useHeading();
+    const [addNote, { isLoading: isCreating, isSuccess }] = useAddNoteMutation()
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -21,15 +20,14 @@ const CreateNote = () => {
             id: uuidv4(),
             ...data
         }
+        addNote(payload)
+    }
 
-        setIsCreating(true)
-        const response = await getResponse(`${BASE_API_URL}`, 'POST', payload);
-
-        if (response.ok) {
-            setIsCreating(false)
+    useEffect(() => {
+        if (isSuccess) {
             navigate('/')
         }
-    }
+    }, [isSuccess])
 
     useEffect(() => {
         updateHeading('Create a note!')

@@ -4,19 +4,26 @@ import { getResponse } from "../common/utils";
 import Card from "../components/Card";
 import { useHeading } from "../context/HeadingContext";
 import useFetch from "../hooks/useFetch";
+import { useDeleteNoteMutation, useGetNotesQuery } from "../features/api/apiSlice";
 
 const Index = () => {
-  const { data: notes = null, loading, error, updateData, updateError } = useFetch()
+  const {
+    data: notes,
+    isLoading,
+    isSuccess,
+    isError,
+    error
+  } = useGetNotesQuery();
   const { updateHeading } = useHeading()
+  const [deleteNote, {
+    isLoading: isDeletePending,
+    data: deletedNote
+  }] = useDeleteNoteMutation()
 
   const handleNoteDelete = async (id) => {
-    updateData(notes.map((note) => note.id === id ? { ...note, isDeletePending: true } : note))
-    const response = await getResponse(`${BASE_API_URL}/${id}`, 'DELETE');
-    if (response.ok) {
-      updateData(notes.filter((note) => note.id !== id))
-    } else {
-      updateError('Not able to delete note please try again later 😞');
-    }
+    deleteNote({
+      id
+    })
   }
 
   useEffect(() => {
@@ -24,9 +31,9 @@ const Index = () => {
   }, [])
 
   const renderContent = () => {
-    if (loading) return <p>loading...</p>;
-    else if (error) return <p>failed to fetch please try again 😞</p>;
-    else if (notes?.length > 0) {
+    if (isLoading) return <p>loading...</p>;
+    if (isError) return <p>failed to fetch please try again 😞 {error}</p>;
+    if (isSuccess && notes?.length > 0) {
       return (
         <div className="cards-container">
           {notes.map(({
@@ -45,7 +52,7 @@ const Index = () => {
               description={description}
               title={title}
               onDelete={handleNoteDelete}
-              isDeletePending={isDeletePending}
+              isDeletePending={deletedNote?.id === id && isDeletePending}
             />
           ))}
         </div>
